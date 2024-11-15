@@ -25,6 +25,7 @@ jobs:
           enable-ssh: 1
           keyboard-keymap: us
           locale: en_US.UTF-8
-          pi-gen-version: ${{ inputs.pi-gen-version }}
+          pi-gen-version: arm64
+          release: bookworm
           stage-list: stage0 stage1 stage2
           verbose-output: true
