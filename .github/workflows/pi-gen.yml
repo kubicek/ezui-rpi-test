@@ -27,5 +27,5 @@ jobs:
           locale: en_US.UTF-8
           pi-gen-version: arm64
           release: bookworm
-          stage-list: stage0 stage1 stage2
+          stage-list: stage0 stage1 stage2 ./stage-ezui
           verbose-output: true
