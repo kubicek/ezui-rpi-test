@@ -27,4 +27,4 @@ jobs:
           locale: en_US.UTF-8
           pi-gen-version: ${{ inputs.pi-gen-version }}
           stage-list: stage0 stage1 stage2
-          output: true
+          verbose-output: true
