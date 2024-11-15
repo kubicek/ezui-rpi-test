@@ -28,4 +28,12 @@ jobs:
           pi-gen-version: arm64
           release: bookworm
           stage-list: stage0 stage1 stage2 ./stage-ezui
+          timezone: Europe/Prague
           verbose-output: true
+
+      - name: Release image
+        uses: softprops/action-gh-release@v2
+        with:
+          name: first
+          files: ${{ steps.build.outputs.image-path }}
+
