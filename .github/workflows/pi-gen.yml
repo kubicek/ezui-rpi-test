@@ -15,12 +15,15 @@ jobs:
 
       - name: Run pi-gen-action
         uses: usimd/pi-gen-action@v1.10.0
+        id: build
         with:
           image-name: ezui
           hostname: ezui
           username: ezui
           password: ezui
           compression: none
+          # compression: gz
+          # compression-level: 6
           disable-first-boot-user-rename: 1
           enable-ssh: 1
           keyboard-keymap: us
