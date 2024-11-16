@@ -21,9 +21,8 @@ jobs:
           hostname: ezui
           username: ezui
           password: ezui
-          compression: none
-          # compression: gz
-          # compression-level: 6
+          compression: gz
+          compression-level: 6
           disable-first-boot-user-rename: 1
           enable-ssh: 1
           keyboard-keymap: us
