@@ -20,7 +20,7 @@ jobs:
         run: sudo mkdir -p /usr/share/i18n
 
       - name: Touch /usr/share/i18n/SUPPORTED
-        run: sudo touch /usr/share/i18n/SUPPORTED
+        run: sudo echo "en_US.UTF-8 UTF-8" > /usr/share/i18n/SUPPORTED
 
       - name: Run pi-gen-action
         uses: usimd/pi-gen-action@v1.10.0
