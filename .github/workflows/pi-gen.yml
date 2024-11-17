@@ -2,8 +2,8 @@ name: Generate RPI Image
 
 on:
   push:
-    tags:
-      - '*'
+    # tags:
+    #   - '*'
   workflow_dispatch:
 
 permissions:
