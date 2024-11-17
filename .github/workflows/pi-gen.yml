@@ -16,6 +16,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Touch /usr/share/i18n/SUPPORTED
+        run: sudo touch /usr/share/i18n/SUPPORTED
+
       - name: Run pi-gen-action
         uses: usimd/pi-gen-action@v1.10.0
         id: build
