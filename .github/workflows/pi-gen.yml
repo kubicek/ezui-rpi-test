@@ -16,6 +16,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Mkdir /usr/share/i18n
+        run: sudo mkdir -p /usr/share/i18n
+
       - name: Touch /usr/share/i18n/SUPPORTED
         run: sudo touch /usr/share/i18n/SUPPORTED
 
