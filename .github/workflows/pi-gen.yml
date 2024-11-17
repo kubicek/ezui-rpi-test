@@ -12,6 +12,8 @@ permissions:
 jobs:
   build-rpi-image:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/actions/runner-images/ubuntu22.04:latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
